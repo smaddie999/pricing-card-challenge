@@ -90,7 +90,7 @@ html {
      }
 
 @media (min-width: 576px) {
-  .card{
+  .card {
   width: 700px;
   height: 450px;
   }
