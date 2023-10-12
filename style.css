@@ -1,8 +1,6 @@
 html {
   box-sizing: border-box;
   background-color: hsl(204, 43%, 93%);
-  width: 100vw;
-  height: 100vh;
   padding: 20px;
 }
 
@@ -11,8 +9,6 @@ html {
 }
 
 .card {
-  width: 700px;
-  height: 450px;
   box-shadow: 9px 6px 5px 0px rgba(0,0,0,0.2);
   border-radius: 10px;
   overflow: clip;
@@ -45,7 +41,7 @@ html {
 
 .bottom-left {
   display: inline-block;
-  width: 50%;
+  width: 100%;
   height: 100%;
   vertical-align: top;
   background-color: hsl(179, 62%, 43%);
@@ -76,7 +72,7 @@ html {
     }
 .bottom-right {
   display: inline-block;
-  width: 50%;
+  width: 100%;
   height: 100%;
   background-color: hsl(179, 62%, 43%);
   vertical-align: top;
@@ -92,3 +88,13 @@ html {
       font-size: .9rem;
       opacity: .8;
      }
+
+@media (min-width: 576px) {
+  .card{
+  width: 700px;
+  height: 450px;
+  }
+  .bottom-left, .bottom-right {
+    width: 50%;
+  }
+}
